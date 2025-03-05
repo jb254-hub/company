@@ -14,9 +14,9 @@ app.use(bodyParser.json());  // Parse incoming JSON requests
 const client = new Client({
     host: 'dpg-cv3elbl2ng1s73fvca0g-a',
     port: 5432,
-    user: 'agallobrian', // Replace with your PostgreSQL username
-    password: 'TkAVNlmySam1CyEgi6II43fMo5A6a6D5', // Replace with your PostgreSQL password
-    database: 'agallodb' // Replace with your PostgreSQL database name
+    user: 'agallobrian', 
+    password: 'TkAVNlmySam1CyEgi6II43fMo5A6a6D5', 
+    database: 'agallodb' 
 });
 
 // Connect to the database
