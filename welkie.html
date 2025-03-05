@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Your Booking Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow: hidden; /* Prevent scrolling during the animation */
+        }
+
+        header {
+            background: #0044cc;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-item {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeInUp 1.5s forwards;
+        }
+
+        .service-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .service-item {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Welcome to Your Booking Hub</h1>
+            <p>Your one-stop solution for travel, accommodation, health appointments, and more!</p>
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="service-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+            <img src="https://img.icons8.com/ios/452/train.png" alt="Train Booking">
+            <h3>Train Booking</h3>
+            <p>Book your train tickets in seconds for a smooth travel experience.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+            <img src="https://img.icons8.com/ios/452/car-rental.png" alt="Car Rental">
+            <h3>Car Rental</h3>
+            <p>Rent a car easily to explore your destination at your own pace.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
+            <img src="https://img.icons8.com/ios/452/restaurant.png" alt="Restaurants">
+            <h3>Restaurants</h3>
+            <p>Discover top-rated restaurants and make your reservations online.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">
+            <img src="https://img.icons8.com/ios/452/bus.png" alt="Bus Booking">
+            <h3>Bus Booking</h3>
+            <p>Book bus tickets for smooth and affordable travel.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1200">
+            <img src="https://img.icons8.com/ios/452/home.png" alt="Modern Housing">
+            <h3>Modern Housing</h3>
+            <p>Find the perfect home or apartment for rent or purchase.</p>
+        </div>
+        <div class="service-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1400">
+            <img src="https://img.icons8.com/ios/452/hospital-room.png" alt="Hospital Appointments">
+            <h3>Hospital Appointments</h3>
+            <p>Book medical appointments and consultations with healthcare providers.</p>
+        </div>
+        
+        <div class="service-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+            <h3>Hotels</h3>
+            <p>Find and book the best hotels that match your preferences.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Booking Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init();
+
+        // Redirect after 5 seconds
+        setTimeout(function() {
+            window.location.href = "YOUR_URL_HERE"; // Replace with your actual URL
+        }, 5000);
+    </script>
+</body>
+</html>
